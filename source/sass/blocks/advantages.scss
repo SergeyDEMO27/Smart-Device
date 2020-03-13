@@ -1,0 +1,71 @@
+.advantages-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.advantages-list__item {
+  position: relative;
+  width: 528px;
+  min-height: 228px;
+  padding: 70px 0 0 40px;
+  margin-bottom: 30px;
+  border: 1px solid #EBEBEB;
+  border-left: 2px solid #00B2FF;
+}
+
+.advantages-list__item:nth-child(1n) {
+  margin-right: 30px;
+}
+
+.advantages__title {
+  color: #00B2FF;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140.6%;
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  margin-bottom: 17px;
+}
+
+.advantages__title::before {
+  top: 39px;
+  left: 43px;
+  position: absolute;
+  content: '';
+  background-size: contain;
+}
+
+.advantages__title--fast-timeline::before {
+  width: 29px;
+  height: 35px;
+  background-image: url('../img/icon-stopwatch.svg');
+}
+
+.advantages__title--major-supplier::before {
+  width: 35px;
+  height: 35px;
+  background-image: url('../img/icon-hired.svg');
+}
+
+.advantages__title--total-privacy::before {
+  width: 36px;
+  height: 31px;
+  background-image: url('../img/icon-detective.svg');
+}
+.advantages__title--custom-cost::before {
+  width: 35px;
+  height: 35px;
+  background-image: url('../img/icon-tag.svg');
+}
+
+.advantages__description {
+  width: 412px;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 134.4%;
+  margin-top: 15px;
+}
