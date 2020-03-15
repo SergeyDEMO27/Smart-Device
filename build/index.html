@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Стартовый шаблон</title>
   <link href="css/style.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -20,7 +22,7 @@
   <ul class="page-header__contacts contacts-list">
     <li class="contacts-list__item"><span class="contacts-list__mobile">info@sd.ru</span></li>
     <li class="contacts-list__item"><span class="contacts-list__mobile">+7 (495) 000 52 52</span></li>
-    <li class="contacts-list__item"><span class="contacts-list__mobile"><a class="contacts-list__link" href="#">Заказать звонок</a><span></span></span></li>
+    <li class="contacts-list__item"><span class="contacts-list__mobile"><a class="contacts-list__link" href="#">Заказать звонок</a></span></li>
   </ul>
 </div>
   <div class="page-header__offer">
@@ -31,7 +33,7 @@
 </div>
     </header>
     <main class="page-main">
-      <div class="page-main__container">
+        <div class="page-main__wrapper">
       <section class="advantages">
       <ul class="advantages-list">
         <li class="advantages-list__item">
@@ -44,27 +46,50 @@
         </li>
         <li class="advantages-list__item">
           <h3 class="advantages__title advantages__title--total-privacy">Полная конфиденциальность</h3>
-          <p class="advantages__description">По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
+          <p class="advantages__description">По желанию клиента <span class="advantages__indent">мы</span> обеспечиваем полную конфеденциальность.</p>
         </li>
         <li class="advantages-list__item">
           <h3 class="advantages__title advantages__title--custom-cost">Персонализация стоимости</h3>
-          <p class="advantages__description">Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+          <p class="advantages__description">Мы <span class="advantages__indent">подбираем</span> определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
         </li>
       </ul>
     </section>
     <section class="about-us">
       <h2 class="about-us__title">О компании</h2>
-      <p class="about-us__description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней. Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+      <p class="about-us__description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+        <p class="about-us__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог <span class="about-us__mobile">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
       <a class="about-us__link" href="#">Подробнее</a>
     </section>
+  </div>
+  <div class="page-main__wrapper page-main__wrapper--offers">
     <section class="offers">
       <h2 class="offers-title">Service Device предлагает следующие товары и услуги</h2>
       <ul class="offers__list">
-        <li class="offers__item"><a href="#">Производство печатных плат</a></li>
-        <li class="offers__item"><a href="#">Монтаж печатных плат</a></li>
-        <li class="offers__item"><a href="#">Комплектующие для светотехники</a></li>
+        <li class="offers__item offers__item--production"><a href="#"><span>Производство печатных плат</span>
+          <picture>
+            <source media="(max-width: 320px)" srcset="img/background-offers-production-mobile.png" width="290" height="256" alt="производство плат">
+            <source media="(max-width: 768px)" srcset="img/background-offers-production-tablet.png" width="720" height="256" alt="производство плат">
+                <img class="offers__image" src="img/background-offers-production.png" width="370" height="620" alt="производство плат">
+              </picture>
+            </a></li>
+        <li class="offers__item offers__item--assembling"><a href="#"><span>Монтаж печатных плат</span>
+          <picture>
+            <source media="(max-width: 320px)" srcset="img/background-offers-assembling-mobile.png" width="290" height="256" alt="монтаж плат">
+            <source media="(max-width: 768px)" srcset="img/background-offers-assembling-tablet.png" width="720" height="256" alt="монтаж плат">
+                <img class="offers__image" src="img/background-offers-assembling.png" width="370" height="620" alt="монтаж плат">
+              </picture>
+          </a></li>
+        <li class="offers__item offers__item--lighting"><a href="#"><span>Комплектующие для светотехники</span>
+          <picture>
+            <source media="(max-width: 320px)" srcset="img/background-offers-lighting-mobile.png" width="290" height="256" alt="светотехника">
+            <source media="(max-width: 768px)" srcset="img/background-offers-lighting-tablet.png" width="720" height="256" alt="светотехника">
+                <img class="offers__image" src="img/background-offers-lighting.png" width="370" height="620" alt="светотехника">
+              </picture>
+          </a></li>
       </ul>
     </section>
+  </div>
+  <div class="page-main__wrapper page-main__wrapper--feedback">
       <section class="feedback">
         <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
         <p class="feedback__description">Мы проконсультируем Вас бесплатно</p>
@@ -73,8 +98,8 @@
           <input type="tel" placeholder="Телефон">
           <textarea style="resize: none" placeholder="Ваш вопрос"></textarea>
           <input type="submit" value="Задать вопрос">
-          <label>
-          <input type="checkbox">
+          <input id="feedback__chekbox" type="checkbox">
+          <label for="feedback__chekbox">
           Я согласен на обработку  персональных данных
         </label>
         </form>

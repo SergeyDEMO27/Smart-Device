@@ -19,7 +19,7 @@
   padding-left: 253px;
   padding-right: 236px;
   padding-top: 33px;
-  margin-bottom: 162px;
+  margin-bottom: 160px;
 }
 
 .page-header__logo-image {
@@ -33,9 +33,10 @@
 }
 
 .page-header__title {
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   font-size: 80px;
   font-weight: 700;
+  letter-spacing: 0.077em;
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
   text-transform: uppercase;
 }
@@ -43,15 +44,14 @@
 .page-header__description {
   width: 621px;
   margin-left: 98px;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
   font-size: 22px;
   line-height: 156.8%;
-  letter-spacing: 0.09em;
 }
 
 .page-header__description::before {
   position: absolute;
-  top: 205px;
+  top: 204px;
   left: 253px;
   content: '';
   width: 66px;
@@ -68,9 +68,10 @@
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
+  letter-spacing: 0.05em;
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
   margin-left: 97px;
-  padding: 17px 29px 19px 45px;
+  padding: 17px 50px 19px 45px;
   background-color: #00B2FF;
   border-radius: 5px;
 }
@@ -98,7 +99,7 @@
   }
 
   .page-header__title {
-    width: 545px;
+    width: 535px;
     font-size: 60px;
   }
 
@@ -106,7 +107,7 @@
     width: 495px;
     margin-left: 50px;
     font-size: 18px;
-    margin-bottom: 54px;
+    margin-bottom: 56px;
   }
 
   .page-header__description::before {
@@ -117,8 +118,9 @@
 
   .page-header__link {
     margin-left: 51px;
-    padding: 17px 21px 19px 25px;
+    padding: 17px 32px 19px 25px;
     margin-bottom: 163px;
+    letter-spacing: 0.07em;
   }
 }
 
@@ -146,12 +148,14 @@
   .page-header__title {
     width: 250px;
     font-size: 40px;
+    margin-left: 5px;
+    margin-bottom: 28px;
   }
 
   .page-header__description {
     width: 250px;
     margin-left: 55px;
-    margin-bottom: 43px;
+    margin-bottom: 42px;
     font-size: 16px;
   }
 
@@ -168,7 +172,8 @@
     display: inline-block;
     vertical-align: middle;
     margin-left: 8px;
-    padding: 17px 29px 19px 25px;
+    padding: 17px 31px 19px 31px;
     margin-bottom: 70px;
+    letter-spacing: 0.06em;
   }
 }

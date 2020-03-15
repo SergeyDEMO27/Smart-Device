@@ -1,0 +1,76 @@
+.page-main__wrapper {
+  position: relative;
+  min-height: 1152px;
+  padding-left: 375px;
+  padding-right: 373px;
+  padding-top: 112px;
+  background-color: #FFFFFF;
+  background-image: url('../img/background-advantages-desktop.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 -30px;
+}
+
+.page-main__wrapper--offers {
+  min-height: 878px;
+  padding-top: 59px;
+  background-image: none;
+  background-color: #1B2D37;
+}
+
+.page-main__wrapper--feedback {
+  min-height: 608px;
+  padding-top: 62px;
+  padding-left: 971px;
+  background-color: #00B2FF;
+  background-image: url('../img/background-feedback.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+@media (max-width: 768px) {
+  .page-main__wrapper {
+    min-height: 1059px;
+    padding: 0;
+    padding-left: 25px;
+    padding-top: 54px;
+    background-image: url('../img/background-advantages-tablet.jpg');
+    background-position: 211px 91px;
+  }
+
+  .page-main__wrapper--offers {
+    min-height: 1102px;
+    padding-top: 25px;
+    background-image: none;
+    background-color: #1B2D37;
+  }
+
+  .page-main__wrapper--feedback {
+    min-height: 584px;
+    padding: 0;
+    padding-top: 80px;
+    padding-left: 88px;
+    background-color: #00B2FF;
+    background-image: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .page-main__wrapper {
+    min-height: 1759px;
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 37px;
+  }
+
+  .page-main__wrapper--offers {
+    padding-top: 27px;
+    min-height: 1074px;
+  }
+
+  .page-main__wrapper--feedback {
+    padding: 0;
+    padding-left: 11px;
+    padding-top: 29px;
+  }
+}
