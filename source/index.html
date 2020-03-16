@@ -107,36 +107,51 @@
     </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__logo"></div>
+      <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <img class="page-footer__logo-image" src="img/logo-smart-device-footer.svg" width="216" height="52" alt="Smart Device">
+      </div>
       <div class="page-footer__social social">
         <ul class="social__list">
-          <li class="social__item">мы в фейсбуке</li>
-          <li class="social__item">мы в одноклассниках</li>
-          <li class="social__item">мы во вконтакте</li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#">
+              <span class="visually-hidden">мы в фейсбуке</span>
+            </a></li>
+          <li class="social__item">
+            <a class="social__link social__link--ok" href="#">
+              <span class="visually-hidden">мы в одноклассниках</span>
+            </a></li>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">
+              <span class="visually-hidden">мы во вконтакте</span>
+            </a></li>
         </ul>
       </div>
       <nav class="page-footer-nav nav">
         <h2 class="nav__title">Разделы сайта</h2>
         <ul class="nav__list site-list">
-          <li class="site-list__item">О компании</li>
-          <li class="site-list__item">Продукты</li>
-          <li class="site-list__item">Производство печатных плат</li>
-          <li class="site-list__item">Монтаж печатных плат</li>
-          <li class="site-list__item">Комплектующие</li>
-          <li class="site-list__item">Доставка</li>
-          <li class="site-list__item">Контакты</li>
+          <li class="site-list__item"><a href="#">О компании</a></li>
+          <li class="site-list__item"><a href="#">Комплектующие</a></li>
+          <li class="site-list__item"><a href="#">Продукты</a></li>
+          <li class="site-list__item"><a href="#">Доставка</a></li>
+          <li class="site-list__item"><a href="#">Производство печатных плат</a></li>
+          <li class="site-list__item"><a href="#">Контакты</a></li>
+          <li class="site-list__item"><a href="#">Монтаж печатных плат</a></li>
         </ul>
       </nav>
         <div class="page-footer__contacts contacts">
           <h2 class="contacts__title">Наш офис</h2>
-          <p class="contacts__description">г. Мытищи, Олимпийский проспект, д.10 +7 (495) 589-40-50 +7 (925) 003-87-67 +7 (926) 926-080-79</p>
+          <p class="contacts__description">г. Мытищи, Олимпийский проспект, д.10 <br> +7 (495) 589-40-50 <br> +7 (925) 003-87-67 <br> +7 (926) 926-080-79</p>
         </div>
-        <div class="page-footer__copyright copyright">
+        <div class="page-footer__copyright copyright copyright--rights">
           <p class="copyright__item">Все права защищены</p>
           <p class="copyright__item">1999-2018 SD Service Devices</p>
-          <a class="copyright__item">Условия конфиденциальности</a>
-          <a class="copyright__item">Developed by wow studio</a>
         </div>
+        <div class="page-footer__copyright copyright copyright--developer">
+          <a href="#" class="copyright__item">Условия конфиденциальности</a>
+          <a href="#" class="copyright__item">Developed by wow studio</a>
+        </div>
+      </div>
     </footer>
     <section class="feedback feedback-popup" style="display: none ">
       <h2 class="feedback__title">Закажите звонок</h2>
