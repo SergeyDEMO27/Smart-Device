@@ -10,15 +10,66 @@
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
 }
 
+.nav input {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .nav__title {
-    display: none;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 320px) {
+  .nav {
+    position: relative;
+    margin-bottom: 23px;
+  }
+
   .nav__title {
     display: block;
-    margin-bottom: 56px;
+    margin-bottom: 33px;
   }
+
+  .nav__tab-title::before {
+     position: absolute;
+     top: 7px;
+     left: 273px;
+     content: '';
+     width: 16px;
+     height: 2px;
+     background-color: #C4C4C4;
+   }
+
+  .nav__tab-title::after {
+     position: absolute;
+     top: 0px;
+     left: 280px;
+     content: '';
+     width: 2px;
+     height: 16px;
+     background-color: #C4C4C4;
+   }
+
+   .nav :checked + .nav__tab-title::after {
+     display: none;
+   }
+
+   .nav :checked ~ .site-list {
+     display: block;
+   }
+
+   .nav__title::before {
+     position: absolute;
+     top: 43px;
+     left: -15px;
+     content: '';
+     width: 320px;
+     height: 1px;
+     background-color: #DCDDDC;
+   }
+
+ .nav :checked ~ .nav__title::before {
+   top: 255px;
+ }
 }

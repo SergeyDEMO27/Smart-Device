@@ -19,6 +19,19 @@
   background-color: #FFFFFF;
 }
 
+.advantages-list__item:hover {
+  background-color: #00B2FF;
+}
+
+.advantages-list__item:hover .advantages__title,
+.advantages-list__item:hover .advantages__description {
+  color: #FFFFFF;
+}
+
+.advantages-list__item:hover .advantages__sprite {
+  fill: #FFFFFF;
+}
+
 .advantages-list__item:nth-child(odd) {
   margin-right: 30px;
 }
@@ -32,35 +45,11 @@
   margin-bottom: 18px;
 }
 
-.advantages__title::before {
+.advantages__sprite {
+  fill: #00B2FF;
+  position: absolute;
   top: 40px;
   left: 43px;
-  position: absolute;
-  content: '';
-  background-size: contain;
-}
-
-.advantages__title--fast-timeline::before {
-  width: 29px;
-  height: 35px;
-  background-image: url('../img/icon-stopwatch.svg');
-}
-
-.advantages__title--major-supplier::before {
-  width: 35px;
-  height: 35px;
-  background-image: url('../img/icon-hired.svg');
-}
-
-.advantages__title--total-privacy::before {
-  width: 36px;
-  height: 31px;
-  background-image: url('../img/icon-detective.svg');
-}
-.advantages__title--custom-cost::before {
-  width: 35px;
-  height: 35px;
-  background-image: url('../img/icon-tag.svg');
 }
 
 .advantages__description {
@@ -113,22 +102,9 @@
     margin-bottom: 10px;
   }
 
-  .advantages__title--fast-timeline::before {
-    top: 25px;
-    left: 26px;
-  }
-
-  .advantages__title--major-supplier::before {
-    top: 22px;
-    left: 25px;
-  }
-
-  .advantages__title--total-privacy::before {
-    top: 30px;
-    left: 24px;
-  }
-  .advantages__title--custom-cost::before {
-    top: 29px;
+  .advantages__sprite {
+    position: absolute;
+    top: 26px;
     left: 24px;
   }
 

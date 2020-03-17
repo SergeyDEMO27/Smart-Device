@@ -2,6 +2,10 @@
   width: 335px;
 }
 
+.contacts input {
+  display: none;
+}
+
 .contacts__title {
   margin-top: 0;
   margin-bottom: 25px;
@@ -34,6 +38,7 @@
 
 @media (max-width: 320px) {
   .contacts {
+    position: relative;
     width: 285px;
     margin-bottom: 40px;
   }
@@ -41,4 +46,50 @@
   .contacts__title {
     margin-bottom: 32px;
   }
+
+  .contacts__description {
+    display: none;
+  }
+
+  .contacts__tab-title::before {
+     position: absolute;
+     top: 7px;
+     left: 273px;
+     content: '';
+     width: 16px;
+     height: 2px;
+     background-color: #C4C4C4;
+   }
+
+  .contacts__tab-title::after {
+     position: absolute;
+     top: 0;
+     left: 280px;
+     content: '';
+     width: 2px;
+     height: 16px;
+     background-color: #C4C4C4;
+   }
+
+   .contacts :checked + .contacts__tab-title::after {
+    display: none;
+   }
+
+   .contacts :checked ~ .contacts__description {
+     display: block;
+   }
+
+   .contacts__title::before {
+   position: absolute;
+   top: 40px;
+   left: -15px;
+   content: '';
+   width: 320px;
+   height: 1px;
+   background-color: #DCDDDC;
+ }
+
+ .contacts :checked ~ .contacts__title::before {
+   top: 199px;
+ }
 }

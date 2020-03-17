@@ -54,6 +54,11 @@
   border-radius: 5px;
 }
 
+.about-us__dots {
+  display: none;
+  width: 20px;
+}
+
 @media (max-width: 768px) {
   .about-us__title,
   .about-us__description,
@@ -75,11 +80,16 @@
   }
 
   .about-us__description {
-    width: 520px;
+    width: 530px;
   }
 
   .about-us__description:last-of-type {
     margin-bottom: 42px;
+  }
+
+  .about-us__dots {
+    display: inline-block;
+    vertical-align: middle;
   }
 
   .about-us__mobile {

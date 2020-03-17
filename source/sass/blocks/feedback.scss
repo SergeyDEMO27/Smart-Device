@@ -1,4 +1,75 @@
+.feedback--popup {
+  width: 409px;
+  min-height: 604px;
+  display: none;
+  position: fixed;
+  left: 38%;
+  top: 25%;
+  background-color: #00B2FF;
+  z-index: 21;
+}
+
+.feedback__close {
+  position: absolute;
+  top: 15px;
+  left: 380px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/icon-cross.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feedback--popup .feedback__form {
+  width: 291px;
+}
+
+.feedback--popup .feedback__title {
+  font-size: 28px;
+  margin-bottom: 15px;
+  margin-left: 4px;
+}
+
+.feedback--popup .feedback__description {
+  margin-bottom: 28px;
+  margin-left: 5px;
+}
+
+.feedback--popup .feedback__form input[type="text"],
+.feedback--popup .feedback__form input[type="tel"] {
+  width: 100%;
+}
+
+.feedback--popup .feedback__form input {
+  margin-bottom: 32px;
+}
+
+.feedback--popup .feedback__form textarea {
+  min-height: 89px;
+  margin-bottom: 30px;
+}
+
+.feedback--popup .feedback__form input[type="submit"] {
+  width: 100%;
+}
+
+.feedback--popup .feedback__label::before {
+  top: 375px;
+  left: 0;
+}
+
+.feedback--popup .feedback__label::after {
+  top: 380px;
+  left: 4px;
+}
+
+.feedback--popup .feedback__label {
+  margin-top: 0;
+  margin-left: 34px;
+}
+
 .feedback__form {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -70,17 +141,44 @@
 }
 
 .feedback__form input[type="checkbox"] {
- width: 30px;
- background-color: #00B2FF;
- border: 1px solid white;
+ width: 14px;
+ display: none;
 }
 
-.feedback__form label {
+.feedback__label::before {
+  position: absolute;
+  left: 308px;
+  top: 296px;
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-color: #00B2FF;
+  border: 1px solid white;
+}
+
+.feedback__label::after {
+  display: none;
+  position: absolute;
+  left: 312px;
+  top: 301px;
+  content: '';
+  width: 7.5px;
+  height: 6px;
+  background-image: url('../img/icon-check.svg');
+}
+
+.feedback__label {
   width: 205px;
+  margin-top: 9px;
+  margin-right: 24px;
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 400;
   font-family: 'PT Mono', 'Arial', sans-serif;
+}
+
+.feedback__form :checked ~ .feedback__label::after {
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -111,6 +209,22 @@
   .feedback__form textarea {
     min-height: 144px;
     margin-bottom: 46px;
+  }
+
+  .feedback__label::before {
+    top: 305px;
+    left: 319px;
+  }
+
+  .feedback__label::after {
+    top: 310px;
+    left: 323px;
+  }
+
+  .feedback__label {
+    width: 205px;
+    margin-top: 8px;
+    margin-right: 33px;
   }
 }
 
@@ -146,5 +260,20 @@
 
   .feedback__form input[type="submit"] {
     width: 100%;
+  }
+
+  .feedback__label::before {
+    top: 375px;
+    left: 0;
+  }
+
+  .feedback__label::after {
+    top: 380px;
+    left: 4px;
+  }
+
+  .feedback__label {
+    margin-top: 0;
+    margin-left: 34px;
   }
 }
