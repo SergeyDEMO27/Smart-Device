@@ -2,7 +2,7 @@
 var openPopup = document.querySelector('.contacts-list__link');
 var popup = document.querySelector(".feedback--popup");
 var closePopup = document.querySelector(".feedback__close");
-var mainPage = document.querySelector(".index-page");
+var mainPage = document.querySelector(".container");
 var popupName = document.querySelector(".feedback__name");
 
 openPopup.addEventListener('click', function (evt) {

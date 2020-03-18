@@ -49,11 +49,18 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   letter-spacing: 0.05em;
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
   padding: 14px 28px 12px 26px;
+}
+
+.contacts-list__mobile {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {
