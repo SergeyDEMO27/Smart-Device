@@ -115,7 +115,7 @@
         <p class="feedback__description">Мы проконсультируем Вас бесплатно</p>
         <form class="feedback__form">
           <input type="text" placeholder="Имя">
-          <input type="tel" placeholder="Телефон">
+          <input type="tel" class="feedback__tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Телефон">
           <textarea style="resize: none" placeholder="Ваш вопрос"></textarea>
           <input type="submit" value="Задать вопрос">
           <input id="feedback__chekbox" type="checkbox">

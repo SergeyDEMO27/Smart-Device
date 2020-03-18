@@ -4,6 +4,7 @@ var popup = document.querySelector(".feedback--popup");
 var closePopup = document.querySelector(".feedback__close");
 var mainPage = document.querySelector(".container");
 var popupName = document.querySelector(".feedback__name");
+var tel = document.querySelector(".feedback__tel");
 
 openPopup.addEventListener('click', function (evt) {
   evt.preventDefault();
@@ -27,3 +28,9 @@ window.addEventListener("keydown", function (evt) {
   }
 }
 });
+
+tel.onfocus = function() {
+  if (tel.value.length === 0) {
+    tel.value = "+7("
+  }
+}
