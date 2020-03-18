@@ -65,7 +65,7 @@
   margin-left: 11px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .advantages-list {
     margin-bottom: 20px;
   }
@@ -114,13 +114,15 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .advantages-list {
     margin-bottom: 36px;
   }
 
   .advantages-list__item {
     margin-bottom: 21px;
+    padding-top: 43px;
+    padding-left: 25px;
   }
 
   .advantages-list__item:first-child {
@@ -133,6 +135,7 @@
 
   .advantages-list .advantages-list__item:nth-child(3) {
     min-height: 182px;
+    margin-bottom: 28px;
   }
 
   .advantages-list .advantages-list__item:last-child {
@@ -168,6 +171,15 @@
     margin-bottom: 8px;
   }
 
+  .advantages__description--price {
+    width: 255px;
+  }
+
+  .advantages__indent--mobile {
+    display: inline-block;
+    width: 40px;
+  }
+
   .advantages__title--major-supplier + .advantages__description {
     width: 250px;
     margin-bottom: 29px;
@@ -175,5 +187,10 @@
 
   .advantages__title--total-privacy + .advantages__description {
     margin-top: -7px;
+  }
+
+  .advantages__sprite {
+    top: 16px;
+    left: 25px;
   }
 }

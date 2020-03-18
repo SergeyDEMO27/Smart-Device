@@ -33,7 +33,7 @@
   background-image: url('../img/icon-vk.svg');
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .social__link::after {
     top: 10px;
   }
@@ -51,20 +51,20 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .social__link::after {
-    top: 77px;
+    top: -110px;
   }
 
   .social__link--fb::after {
-    left: -173px;
+    left: 90px;
   }
 
   .social__link--ok::after {
-    left: -131px;
+    left: 131px;
   }
 
   .social__link--vk::after {
-    left: -87px;
+    left: 174px;
   }
 }

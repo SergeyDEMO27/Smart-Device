@@ -33,7 +33,7 @@
   margin-right: 73px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .site-list {
     width: 235px;
     margin-top: 25px;
@@ -73,7 +73,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .site-list {
     margin-right: 0;
     display: none;

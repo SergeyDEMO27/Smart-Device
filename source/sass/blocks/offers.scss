@@ -43,7 +43,7 @@
   left: 44px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .offers-title {
     width: 615px;
     font-size: 32px;
@@ -72,7 +72,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .offers-title {
     width: 275px;
     font-size: 28px;
@@ -82,6 +82,7 @@
 
   .offers__item {
     margin-bottom: 22px;
+    min-height: 100px;
   }
 
   .offers__image {

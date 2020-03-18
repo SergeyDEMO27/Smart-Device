@@ -59,7 +59,7 @@
   width: 20px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .about-us__title,
   .about-us__description,
   .about-us__link {
@@ -102,7 +102,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .about-us__title,
   .about-us__description,
   .about-us__link {
@@ -129,5 +129,14 @@
 
   .about-us__description:last-of-type {
     margin-bottom: 31px;
+  }
+
+  .about-us__dots {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .about-us__mobile {
+    display: none;
   }
 }

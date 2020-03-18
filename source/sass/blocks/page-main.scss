@@ -27,7 +27,7 @@
   background-position: 0 0;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .page-main__wrapper {
     min-height: 1059px;
     padding: 0;
@@ -54,24 +54,27 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .page-main__wrapper {
     min-height: 1759px;
     padding: 0;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 37px;
+    background-image: url('../img/background-advantages-tablet.jpg');
+    background-position: -120px 650px;
   }
 
   .page-main__wrapper--offers {
     padding-top: 27px;
     min-height: 1074px;
+    background-image: none;
   }
 
   .page-main__wrapper--feedback {
     padding: 0;
     padding-left: 11px;
-    padding-top: 29px;
-    min-height: 611px;
+    padding-top: 8px;
+    min-height: 632px;
   }
 }

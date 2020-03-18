@@ -92,7 +92,7 @@
   font-weight: 400;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .page-header {
     min-height: 270px;
     background-image: url('../img/background-page-header-tablet.jpg');
@@ -140,7 +140,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .page-header {
     min-height: 157px;
     background-image: url('../img/background-page-header-mobile.jpg');
@@ -176,6 +176,7 @@
   }
 
   .page-header__description::before {
+    width: 33px;
     top: 171px;
     left: 18px;
   }
@@ -191,5 +192,9 @@
     padding: 17px 31px 19px 31px;
     margin-bottom: 70px;
     letter-spacing: 0.06em;
+  }
+
+  .page-header__scroll {
+    display: none;
   }
 }
