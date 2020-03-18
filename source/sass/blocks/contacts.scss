@@ -10,7 +10,7 @@
   margin-top: 0;
   margin-bottom: 25px;
   text-transform: uppercase;
-  color: #1B2D37;
+  color: #1b2d37;
   font-size: 15px;
   font-weight: 400;
   line-height: 16px;
@@ -20,7 +20,7 @@
 
 .contacts__description {
   margin-top: 10px;
-  color: #8A9398;
+  color: #8a9398;
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
@@ -52,44 +52,44 @@
   }
 
   .contacts__tab-title::before {
-     position: absolute;
-     top: 7px;
-     left: 273px;
-     content: '';
-     width: 16px;
-     height: 2px;
-     background-color: #C4C4C4;
-   }
+    position: absolute;
+    top: 7px;
+    left: 273px;
+    content: '';
+    width: 16px;
+    height: 2px;
+    background-color: #c4c4c4;
+  }
 
   .contacts__tab-title::after {
-     position: absolute;
-     top: 0;
-     left: 280px;
-     content: '';
-     width: 2px;
-     height: 16px;
-     background-color: #C4C4C4;
-   }
+    position: absolute;
+    top: 0;
+    left: 280px;
+    content: '';
+    width: 2px;
+    height: 16px;
+    background-color: #c4c4c4;
+  }
 
-   .contacts :checked + .contacts__tab-title::after {
+  .contacts :checked + .contacts__tab-title::after {
     display: none;
-   }
+  }
 
-   .contacts :checked ~ .contacts__description {
-     display: block;
-   }
+  .contacts :checked ~ .contacts__description {
+    display: block;
+  }
 
-   .contacts__title::before {
-   position: absolute;
-   top: 40px;
-   left: -15px;
-   content: '';
-   width: 320px;
-   height: 1px;
-   background-color: #DCDDDC;
- }
+  .contacts__title::before {
+    position: absolute;
+    top: 40px;
+    left: -15px;
+    content: '';
+    width: 320px;
+    height: 1px;
+    background-color: #dcdcdc;
+  }
 
- .contacts :checked ~ .contacts__title::before {
-   top: 199px;
- }
+  .contacts :checked ~ .contacts__title::before {
+    top: 199px;
+  }
 }

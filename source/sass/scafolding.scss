@@ -2,7 +2,8 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: 'PT Mono', 'Arial', sans-serif;
+  font-family: 'PT Mono', 'Courier New', monospace;
+  scroll-behavior: smooth;
 }
 
 .visually-hidden {
@@ -19,7 +20,7 @@ body {
   content: "";
   width: 100%;
   height: 452%;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   background-image: url("../img/background-overlay.png");

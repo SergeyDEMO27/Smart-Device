@@ -14,22 +14,22 @@
   min-height: 228px;
   padding: 70px 0 0 40px;
   margin-bottom: 30px;
-  border: 1px solid #EBEBEB;
-  border-left: 2px solid #00B2FF;
-  background-color: #FFFFFF;
+  border: 1px solid #ebebeb;
+  border-left: 2px solid #00b2ff;
+  background-color: #ffffff;
 }
 
 .advantages-list__item:hover {
-  background-color: #00B2FF;
+  background-color: #00b2ff;
 }
 
 .advantages-list__item:hover .advantages__title,
 .advantages-list__item:hover .advantages__description {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .advantages-list__item:hover .advantages__sprite {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .advantages-list__item:nth-child(odd) {
@@ -37,7 +37,7 @@
 }
 
 .advantages__title {
-  color: #00B2FF;
+  color: #00b2ff;
   font-size: 24px;
   font-weight: 400;
   line-height: 140.6%;
@@ -46,7 +46,7 @@
 }
 
 .advantages__sprite {
-  fill: #00B2FF;
+  fill: #00b2ff;
   position: absolute;
   top: 40px;
   left: 43px;
@@ -128,7 +128,7 @@
   }
 
   .advantages-list__item:nth-child(odd) {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .advantages-list .advantages-list__item:nth-child(3) {
