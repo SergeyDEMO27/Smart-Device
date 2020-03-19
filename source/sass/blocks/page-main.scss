@@ -1,11 +1,12 @@
 .page-main__wrapper {
   position: relative;
+  margin: 0 auto;
   min-height: 1152px;
   padding-left: 375px;
-  padding-right: 373px;
+  padding-right: 355px;
   padding-top: 112px;
   background-color: #ffffff;
-  background-image: url('../img/background-advantages-desktop.jpg');
+  background-image: url("../img/background-advantages-desktop.jpg");
   background-repeat: no-repeat;
   background-position: 0 -30px;
 }
@@ -22,7 +23,7 @@
   padding-top: 62px;
   padding-left: 971px;
   background-color: #00b2ff;
-  background-image: url('../img/background-feedback.jpg');
+  background-image: url("../img/background-feedback.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -32,8 +33,8 @@
     min-height: 1059px;
     padding: 0;
     padding-left: 25px;
-    padding-top: 54px;
-    background-image: url('../img/background-advantages-tablet.jpg');
+    padding-top: 56px;
+    background-image: url("../img/background-advantages-tablet.jpg");
     background-position: 211px 91px;
   }
 
@@ -61,7 +62,7 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 37px;
-    background-image: url('../img/background-advantages-tablet.jpg');
+    background-image: url("../img/background-advantages-tablet.jpg");
     background-position: -120px 650px;
   }
 

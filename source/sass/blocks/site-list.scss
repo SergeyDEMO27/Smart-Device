@@ -21,15 +21,23 @@
   line-height: 25px;
 }
 
-.site-list__item:first-child {
+.site-list__item a:hover {
+  color: #00b2ff;
+}
+
+.site-list__item a:active {
+  color: #000000;
+}
+
+.site-list__item--about {
   margin-right: 218px;
 }
 
-.site-list__item:nth-child(3) {
+.site-list__item--products {
   margin-right: 234px;
 }
 
-.site-list__item:nth-child(5) {
+.site-list__item--production {
   margin-right: 73px;
 }
 
@@ -41,34 +49,34 @@
     margin-bottom: 57px;
   }
 
-  .site-list__item:first-child,
-  .site-list__item:nth-child(3),
-  .site-list__item:nth-child(5) {
+  .site-list__item--about,
+  .site-list__item--products,
+  .site-list__item--production {
     margin-right: 0;
   }
 
-  .site-list__item:first-child {
+  .site-list__item--about {
     order: -4;
     width: 220px;
   }
 
-  .site-list__item:nth-child(2) {
+  .site-list__item--component {
     width: 220px;
   }
 
-  .site-list__item:nth-child(3) {
+  .site-list__item--products {
     order: -3;
   }
 
-  .site-list__item:nth-child(4) {
+  .site-list__item--delivery {
     width: 220px;
   }
 
-  .site-list__item:nth-child(5) {
+  .site-list__item--production {
     order: -2;
   }
 
-  .site-list__item:last-child {
+  .site-list__item--assembling {
     order: -1;
   }
 }

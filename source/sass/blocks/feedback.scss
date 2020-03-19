@@ -12,7 +12,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 140.6%;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   margin-bottom: 10px;
 }
 
@@ -29,7 +29,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 134%;
-  font-family: 'PT Mono', 'Arial', sans-serif;
+  font-family: "PT Mono", "Arial", sans-serif;
 }
 
 .feedback__form input {
@@ -40,8 +40,16 @@
   margin-bottom: 40px;
 }
 
-.feedback__form input[type="text"],
-.feedback__form input[type="tel"] {
+.feedback__form input:hover {
+  background-color: #19cdff;
+}
+
+.feedback__form input:focus {
+  background-color: #19cdff;
+}
+
+.feedback__form .feedback__name,
+.feedback__form .feedback__tel {
   width: 254px;
   padding-top: 15px;
   padding-left: 16px;
@@ -58,6 +66,14 @@
   background-color: #19baff;
 }
 
+.feedback__form textarea:hover {
+  background-color: #19cdff;
+}
+
+.feedback__form textarea:focus {
+  background-color: #19cdff;
+}
+
 .feedback__form input[type="submit"] {
   background-color: #00b2ff;
   text-transform: uppercase;
@@ -65,10 +81,20 @@
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.05em;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   padding: 14px 28px 12px 26px;
   border: 1px solid white;
   border-radius: 5px;
+}
+
+.feedback__form input[type="submit"]:hover {
+  color: #1b2d37;
+  border-color: #1b2d37;
+}
+
+.feedback__form input[type="submit"]:active {
+  color: #000000;
+  border-color: #000000;
 }
 
 .feedback__form input[type="checkbox"] {
@@ -80,7 +106,7 @@
   position: absolute;
   left: 308px;
   top: 296px;
-  content: '';
+  content: "";
   width: 14px;
   height: 14px;
   background-color: #00b2ff;
@@ -92,20 +118,26 @@
   position: absolute;
   left: 312px;
   top: 301px;
-  content: '';
+  content: "";
   width: 7.5px;
   height: 6px;
-  background-image: url('../img/icon-check.svg');
+  background-image: url("../img/icon-check.svg");
 }
 
 .feedback__label {
   width: 205px;
+  padding-left: 30px;
   margin-top: 9px;
   margin-right: 24px;
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'PT Mono', 'Arial', sans-serif;
+  font-family: "PT Mono", "Arial", sans-serif;
+  cursor: pointer;
+}
+
+.feedback__label:hover {
+  color: #1b2d37;
 }
 
 .feedback__form :checked ~ .feedback__label::after {
@@ -125,10 +157,15 @@
   z-index: 21;
 }
 
-.feedback__close {
+.feedback__close-button {
+  display: none;
+}
+
+.feedback__close::after {
   position: absolute;
   top: 20px;
   left: 446px;
+  content: "";
   width: 16px;
   height: 16px;
   background-image: url("../img/icon-cross.png");
@@ -152,21 +189,24 @@
   margin-left: 5px;
 }
 
-.feedback--popup .feedback__form input[type="text"],
-.feedback--popup .feedback__form input[type="tel"] {
+.feedback__form-popup .feedback__name--popup,
+.feedback__form-popup .feedback__tel--popup {
   width: 100%;
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-bottom: 20px;
 }
 
-.feedback--popup .feedback__form input {
+.feedback__form-popup input {
   margin-bottom: 32px;
 }
 
-.feedback--popup .feedback__form textarea {
+.feedback__form-popup textarea {
   min-height: 89px;
   margin-bottom: 30px;
 }
 
-.feedback--popup .feedback__form input[type="submit"] {
+.feedback__form-popup input[type="submit"] {
   width: 100%;
   margin-bottom: 38px;
 }
@@ -184,7 +224,11 @@
 .feedback--popup .feedback__label {
   width: 450px;
   margin-top: 0;
-  margin-left: 45px;
+  padding-left: 45px;
+}
+
+.feedback-show {
+  display: block;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

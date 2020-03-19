@@ -12,36 +12,52 @@
   position: relative;
 }
 
-.contacts-list__item:first-child::before,
-.contacts-list__item:nth-child(2)::before {
+.contacts-list__tel,
+.contacts-list__mail {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.contacts-list__tel:hover,
+.contacts-list__mail:hover {
+  color: #00b2ff;
+}
+
+.contacts-list__tel:active,
+.contacts-list__mail:active {
+  color: #000000;
+}
+
+.contacts-list__item--mail::before,
+.contacts-list__item--tel::before {
   position: absolute;
   top: 14px;
   left: -40px;
-  content: '';
+  content: "";
   width: 19px;
   height: 14px;
-  background-image: url('../img/icon-emale.svg');
+  background-image: url("../img/icon-emale.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.contacts-list__item:nth-child(2)::before {
+.contacts-list__item--tel::before {
   top: 12px;
   left: 184px;
   width: 18px;
   height: 18px;
-  background-image: url('../img/icon-phone.svg');
+  background-image: url("../img/icon-phone.svg");
 }
 
-.contacts-list__item:nth-child(2) {
+.contacts-list__tel {
   margin-left: 122px;
 }
 
-.contacts-list__item:last-child {
+.contacts-list__item--link {
   margin-left: 50px;
-  border: 1px solid #ffffff;
-  box-sizing: border-box;
-  border-radius: 5px;
 }
 
 .contacts-list__link {
@@ -52,8 +68,20 @@
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   padding: 14px 28px 12px 26px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.contacts-list__link:hover {
+  color: #00b2ff;
+  border-color: #00b2ff;
+}
+
+.contacts-list__link:active {
+  color: #000000;
+  border-color: #000000;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -65,16 +93,16 @@
     border: none;
   }
 
-  .contacts-list__item:first-child::before {
+  .contacts-list__item--mail::before {
     top: -12px;
-    left: 89px;
+    left: -34px;
     width: 25px;
     height: 19px;
   }
 
-  .contacts-list__item:nth-child(2)::before {
+  .contacts-list__item--tel::before {
     top: -16px;
-    left: 148px;
+    left: 26px;
     width: 24px;
     height: 24px;
   }
@@ -85,17 +113,17 @@
     display: none;
   }
 
-  .contacts-list__item:first-child::before {
+  .contacts-list__item--mail::before {
     width: 25px;
     height: 19px;
     top: -13px;
-    left: 101px;
+    left: -21px;
   }
 
-  .contacts-list__item:nth-child(2)::before {
+  .contacts-list__item--tel::before {
     width: 24px;
     height: 24px;
     top: -16px;
-    left: 150px;
+    left: 27px;
   }
 }

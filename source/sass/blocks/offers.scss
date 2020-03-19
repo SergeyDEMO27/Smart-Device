@@ -4,7 +4,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 140.6%;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .offers__list {
@@ -21,7 +21,15 @@
   min-height: 620px;
 }
 
-.offers__item:not(:last-child) {
+.offers__item:hover span {
+  color: #00b2ff;
+}
+
+.offers__item:active span {
+  color: #000000;
+}
+
+.offers__item:not(.offers__item--lighting) {
   margin-right: 30px;
 }
 
@@ -33,7 +41,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .offers__item span {
@@ -54,7 +62,7 @@
     margin-bottom: 36px;
   }
 
-  .offers__item:not(:last-child) {
+  .offers__item:not(.offers__item--lighting) {
     margin-right: 0;
   }
 
@@ -67,7 +75,7 @@
     top: 38px;
   }
 
-  .offers__item:last-child span {
+  .offers__item--lighting span {
     top: 50px;
   }
 }
@@ -95,7 +103,7 @@
     left: 35px;
   }
 
-  .offers__item:last-child span {
+  .offers__item--lighting span {
     top: 30px;
   }
 }

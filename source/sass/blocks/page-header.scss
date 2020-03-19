@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   background-color: #1b2931;
   color: #ffffff;
-  background-image: url('../img/background-page-header-desktop.jpg');
+  background-image: url("../img/background-page-header-desktop.jpg");
   background-repeat: no-repeat;
   min-height: 878px;
 }
@@ -37,7 +37,7 @@
   font-size: 80px;
   font-weight: 700;
   letter-spacing: 0.077em;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -53,7 +53,7 @@
   position: absolute;
   top: 204px;
   left: 253px;
-  content: '';
+  content: "";
   width: 66px;
   height: 2px;
   background-color: #ffffff;
@@ -69,11 +69,20 @@
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   margin-left: 97px;
   padding: 17px 50px 19px 45px;
   background-color: #00b2ff;
   border-radius: 5px;
+}
+
+.page-header__link:hover {
+  color: #00b2ff;
+  background-color: #ffffff;
+}
+
+.page-header__link:active {
+  color: #000000;
 }
 
 .page-header__link-mobile {
@@ -92,10 +101,18 @@
   font-weight: 400;
 }
 
+.page-header__scroll:hover {
+  color: #00b2ff;
+}
+
+.page-header__scroll:active {
+  color: #000000;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .page-header {
     min-height: 270px;
-    background-image: url('../img/background-page-header-tablet.jpg');
+    background-image: url("../img/background-page-header-tablet.jpg");
   }
 
   .page-header__wrapper {
@@ -143,7 +160,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .page-header {
     min-height: 157px;
-    background-image: url('../img/background-page-header-mobile.jpg');
+    background-image: url("../img/background-page-header-mobile.jpg");
   }
 
   .page-header__wrapper {

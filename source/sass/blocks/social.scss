@@ -12,7 +12,7 @@
   position: absolute;
   top: 106px;
   left: -424px;
-  content: '';
+  content: "";
   width: 26.5px;
   height: 26px;
   background-repeat: no-repeat;
@@ -20,17 +20,17 @@
 
 .social__link--fb::after {
   height: 27px;
-  background-image: url('../img/icon-fb.svg');
+  background-image: url("../img/icon-fb.svg");
 }
 
 .social__link--ok::after {
   left: -382px;
-  background-image: url('../img/icon-ok.svg');
+  background-image: url("../img/icon-ok.svg");
 }
 
 .social__link--vk::after {
   left: -339px;
-  background-image: url('../img/icon-vk.svg');
+  background-image: url("../img/icon-vk.svg");
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

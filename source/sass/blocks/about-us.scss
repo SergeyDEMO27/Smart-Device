@@ -10,17 +10,17 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 140.6%;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .about-us__title::before {
   position: absolute;
   top: 850px;
   left: 369px;
-  content: '';
+  content: "";
   width: 220px;
   height: 317px;
-  background-image: url('../img/2005.jpg');
+  background-image: url("../img/2005.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -47,11 +47,21 @@
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   padding: 17px 54px 13px 45px;
   background-color: #ffffff;
   border: 1px solid #bfecff;
   border-radius: 5px;
+}
+
+.about-us__link:hover {
+  color: #3390ff;
+  border-color: #3390ff;
+}
+
+.about-us__link:active {
+  color: #000000;
+  border-color: #000000;
 }
 
 .about-us__dots {
