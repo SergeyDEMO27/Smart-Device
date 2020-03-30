@@ -1,14 +1,40 @@
-.page-footer__wrapper {
+.page-footer {
   position: relative;
-  padding: 65px 230px 16px 252px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+}
+
+.page-footer__wrapper {
+  padding-top: 65px;
+  padding-bottom: 16px;
   background-color: #fafafa;
 }
 
+.page-footer__wrapper::before {
+  position: absolute;
+  left: 0;
+  // left: -242px;
+  top: 264px;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #dcdddc;
+}
+
+.page-footer__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1425px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
 .page-footer__logo {
-  margin-right: 208px;
+  width: 220px;
+  margin-left: 10px;
+  margin-right: auto;
+  order: -4;
 }
 
 .page-footer__logo-image {
@@ -17,28 +43,53 @@
 }
 
 .page-footer__copyright:first-of-type {
-  margin-right: 200px;
+  margin-right: 10.5vw;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .page-footer__container {
+    min-width: 730px;
+    max-width: 810px;
+  }
+
   .page-footer__logo {
-    margin-right: 87px;
-    margin-bottom: 60px;
-    order: -2;
+    margin-right: auto;
+    margin-bottom: 59px;
+    margin-left: 6px;
+    order: -4;
   }
 
   .page-footer__wrapper {
     padding: 0;
-    padding-left: 25px;
     padding-top: 20px;
+    padding-left: 19px;
+    padding-right: 20px;
     padding-bottom: 16px;
+  }
+
+  .page-footer__wrapper::after {
+    position: absolute;
+    left: 0;
+    top: 95px;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #dcdddc;
+  }
+
+  .page-footer__wrapper::before {
+    top: 390px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .page-footer__container {
+    width: 320px;
+    max-width: 810px;
+  }
+
   .page-footer__wrapper {
     padding: 0;
-    padding-left: 15px;
     padding-top: 46px;
     padding-bottom: 25px;
     margin: 0;
@@ -46,7 +97,22 @@
 
   .page-footer__logo {
     margin: 0;
-    margin-left: 37px;
-    order: -2;
+    margin-left: auto;
+    margin-right: auto;
+    order: -4;
+  }
+
+  .page-footer__wrapper::before {
+    top: 261px;
+  }
+
+  .page-footer__wrapper::after {
+    position: absolute;
+    left: 0;
+    top: 334px;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #dcdddc;
   }
 }

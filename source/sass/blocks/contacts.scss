@@ -1,5 +1,6 @@
 .contacts {
   width: 335px;
+  order: -2;
 }
 
 .contacts input {
@@ -46,9 +47,13 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .contacts {
     width: 340px;
+    order: 0;
+    margin-right: 10px;
   }
 
   .contacts__title {
+    margin-top: 0;
+    margin-left: 3px;
     margin-bottom: 25px;
   }
 }
@@ -57,53 +62,54 @@
   .contacts {
     position: relative;
     width: 285px;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
+    order: 1;
   }
 
   .contacts__title {
     margin-bottom: 32px;
+    margin-left: 15px;
   }
 
   .contacts__description {
     display: none;
+    margin-left: 15px;
+  }
+
+  .contacts__tab-title {
+    position: absolute;
+    top: -30px;
+    left: -15px;
+    width: 300px;
+    height: 72px;
   }
 
   .contacts__tab-title::before {
     position: absolute;
-    top: 7px;
-    left: 273px;
+    top: 37px;
+    left: 303px;
     content: "";
-    width: 16px;
+    width: 14px;
     height: 2px;
     background-color: #c4c4c4;
   }
 
   .contacts__tab-title::after {
     position: absolute;
-    top: 0;
-    left: 280px;
+    top: 31px;
+    left: 309px;
     content: "";
     width: 2px;
-    height: 16px;
+    height: 14px;
     background-color: #c4c4c4;
   }
 
-  .contacts :checked + .contacts__tab-title::after {
+  .contacts :checked ~ .contacts__tab-title::after {
     display: none;
   }
 
   .contacts :checked ~ .contacts__description {
     display: block;
-  }
-
-  .contacts__title::before {
-    position: absolute;
-    top: 40px;
-    left: -15px;
-    content: "";
-    width: 320px;
-    height: 1px;
-    background-color: #dcdcdc;
   }
 
   .contacts :checked ~ .contacts__title::before {

@@ -31,8 +31,7 @@
   color: #000000;
 }
 
-.contacts-list__item--mail::before,
-.contacts-list__item--tel::before {
+.contacts-list__item--mail::before {
   position: absolute;
   top: 14px;
   left: -40px;
@@ -45,11 +44,15 @@
 }
 
 .contacts-list__item--tel::before {
+  position: absolute;
   top: 12px;
   left: 184px;
+  content: "";
   width: 18px;
   height: 18px;
   background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .contacts-list__tel {
@@ -117,13 +120,13 @@
     width: 25px;
     height: 19px;
     top: -13px;
-    left: -21px;
+    left: -38px;
   }
 
   .contacts-list__item--tel::before {
     width: 24px;
     height: 24px;
     top: -16px;
-    left: 27px;
+    left: 11px;
   }
 }

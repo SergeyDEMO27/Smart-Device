@@ -1,3 +1,9 @@
+.nav {
+  width: 442px;
+  margin-right: auto;
+  order: -3;
+}
+
 .nav__title {
   margin-top: 0;
   margin-bottom: 25px;
@@ -15,44 +21,66 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .nav {
+    width: 240px;
+    order: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+
   .nav__title {
-    margin-bottom: 10px;
+    width: 285px;
+    margin-left: 8px;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
   .nav {
+    width: 320px;
     position: relative;
     margin-bottom: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    order: 0;
   }
 
   .nav__title {
     display: block;
     width: 285px;
+    margin-left: 15px;
     margin-bottom: 33px;
+  }
+
+  .nav__tab-title {
+    position: absolute;
+    top: -30px;
+    left: -15px;
+    width: 320px;
+    height: 72px;
   }
 
   .nav__tab-title::before {
     position: absolute;
-    top: 7px;
-    left: 273px;
-    content: '';
-    width: 16px;
+    top: 37px;
+    left: 303px;
+    content: "";
+    width: 14px;
     height: 2px;
     background-color: #c4c4c4;
   }
 
   .nav__tab-title::after {
     position: absolute;
-    top: 0;
-    left: 280px;
-    content: '';
+    top: 31px;
+    left: 309px;
+    content: "";
     width: 2px;
-    height: 16px;
+    height: 14px;
     background-color: #c4c4c4;
   }
 
-  .nav :checked + .nav__tab-title::after {
+  .nav :checked ~ .nav__tab-title::after {
     display: none;
   }
 
@@ -60,17 +88,7 @@
     display: block;
   }
 
-  .nav__title::before {
-    position: absolute;
-    top: 43px;
-    left: -15px;
-    content: '';
-    width: 320px;
-    height: 1px;
-    background-color: #dcdddc;
-  }
-
-  .nav :checked ~ .nav__title::before {
-    top: 255px;
+  .nav :checked + .page-footer__wrapper::after {
+    top: 360px;
   }
 }

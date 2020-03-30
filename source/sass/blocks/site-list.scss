@@ -1,6 +1,5 @@
 .site-list {
   margin: 0;
-  margin-right: 203px;
   margin-bottom: 73px;
   padding: 0;
   list-style: none;
@@ -30,7 +29,7 @@
 }
 
 .site-list__item--about {
-  margin-right: 218px;
+  margin-right: 216px;
 }
 
 .site-list__item--products {
@@ -46,6 +45,7 @@
     width: 235px;
     margin-top: 25px;
     margin-right: 142px;
+    margin-left: 5px;
     margin-bottom: 57px;
   }
 
@@ -83,7 +83,13 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
   .site-list {
+    width: 300px;
     margin-right: 0;
     display: none;
+    margin-left: 15px;
+  }
+
+  .site-list__item--production {
+    margin-right: 0;
   }
 }

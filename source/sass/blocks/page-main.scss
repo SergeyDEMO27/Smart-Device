@@ -1,14 +1,11 @@
 .page-main__wrapper {
   position: relative;
-  margin: 0 auto;
   min-height: 1152px;
-  padding-left: 375px;
-  padding-right: 355px;
   padding-top: 112px;
   background-color: #ffffff;
   background-image: url("../img/background-advantages-desktop.jpg");
   background-repeat: no-repeat;
-  background-position: 0 -30px;
+  background-size: cover;
 }
 
 .page-main__wrapper--offers {
@@ -21,7 +18,8 @@
 .page-main__wrapper--feedback {
   min-height: 608px;
   padding-top: 62px;
-  padding-left: 971px;
+  padding-left: 0;
+  padding-right: 18.65vw;
   background-color: #00b2ff;
   background-image: url("../img/background-feedback.jpg");
   background-repeat: no-repeat;
@@ -30,12 +28,11 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .page-main__wrapper {
-    min-height: 1059px;
+    min-height: 1057px;
     padding: 0;
-    padding-left: 25px;
     padding-top: 56px;
     background-image: url("../img/background-advantages-tablet.jpg");
-    background-position: 211px 91px;
+    background-position: 14vw -23vw;
   }
 
   .page-main__wrapper--offers {
@@ -46,10 +43,9 @@
   }
 
   .page-main__wrapper--feedback {
-    min-height: 584px;
+    min-height: 583px;
     padding: 0;
     padding-top: 80px;
-    padding-left: 88px;
     background-color: #00b2ff;
     background-image: none;
   }
@@ -57,25 +53,20 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
   .page-main__wrapper {
-    min-height: 1759px;
     padding: 0;
-    padding-left: 15px;
-    padding-right: 15px;
     padding-top: 37px;
     background-image: url("../img/background-advantages-tablet.jpg");
-    background-position: -120px 650px;
+    background-position: -37.5vw 203.12vw;
   }
 
   .page-main__wrapper--offers {
-    padding-top: 27px;
-    min-height: 1074px;
+    padding-top: 29px;
     background-image: none;
   }
 
   .page-main__wrapper--feedback {
     padding: 0;
-    padding-left: 11px;
-    padding-top: 8px;
-    min-height: 632px;
+    padding-top: 6px;
+    min-height: 634px;
   }
 }

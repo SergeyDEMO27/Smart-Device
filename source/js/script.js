@@ -3,37 +3,44 @@ var openPopup = document.querySelector('.contacts-list__link');
 var popup = document.querySelector('.feedback--popup');
 var closePopup = document.querySelector('.feedback__close');
 var mainPage = document.querySelector('.container');
-var popupName = document.querySelector('.feedback__name');
-var tel = document.querySelector('.feedback__tel');
-var telPopup = document.querySelector('.feedback__tel--popup');
+var popupName = document.querySelector('.feedback__name-popup');
 var scroll = document.querySelector('.page-header__scroll');
 var link = document.querySelector('.page-header__link');
-
-
-scroll.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  var blockID = scroll.getAttribute('href');
-  document.querySelector('' + blockID).scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
-  });
+var phoneMask = IMask(document.getElementById('telephone'), {
+  mask: '+{7}(000)000-00-00'
 });
 
-link.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  var blockID = link.getAttribute('href');
-  document.querySelector('' + blockID).scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
-  });
+mainPage.addEventListener('click', function () {
+  if (mainPage.classList.contains('overlay')) {
+    mainPage.classList.remove('overlay');
+    popup.classList.remove('feedback-show');
+    mainPage.style.position = '';
+  }
+});
+
+$(scroll).click(function () {
+  $('html, body').animate({
+    scrollTop: $($(this).attr('href')).offset().top
+  }, 500);
+  return false;
+});
+
+$(link).click(function () {
+  $('html, body').animate({
+    scrollTop: $($(this).attr('href')).offset().top
+  }, 500);
+  return false;
 });
 
 openPopup.addEventListener('click', function (evt) {
-  evt.preventDefault();
+  evt.stopPropagation();
   popup.classList.add('feedback-show');
   mainPage.classList.add('overlay');
   mainPage.style.position = 'fixed';
   popupName.focus();
+  var phonepopMask = IMask(document.getElementById('telephone-popup'), {
+    mask: '+{7}(000)000-00-00'
+  });
 });
 
 closePopup.addEventListener('click', function (evt) {
@@ -46,6 +53,7 @@ closePopup.addEventListener('click', function (evt) {
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
+
     if (popup.classList.contains('feedback-show')) {
       popup.classList.remove('feedback-show');
       mainPage.classList.remove('overlay');
@@ -53,15 +61,3 @@ window.addEventListener('keydown', function (evt) {
     }
   }
 });
-
-tel.onfocus = function () {
-  if (tel.value.length === 0) {
-    tel.value = '+7(';
-  }
-};
-
-telPopup.onfocus = function () {
-  if (telPopup.value.length === 0) {
-    telPopup.value = '+7(';
-  }
-};

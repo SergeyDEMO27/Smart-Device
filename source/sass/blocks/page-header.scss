@@ -6,20 +6,31 @@
   color: #ffffff;
   background-image: url("../img/background-page-header-desktop.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   min-height: 878px;
 }
 
 .page-header__wrapper {
-  width: 1411px;
+  position: relative;
+  padding-top: 33px;
+  margin-bottom: 160px;
+}
+
+.page-header__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1425px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding-left: 253px;
-  padding-right: 230px;
-  padding-top: 33px;
-  margin-bottom: 160px;
+  margin-bottom: 225px;
+}
+
+.page-header__logo {
+  margin-left: 15px;
 }
 
 .page-header__logo-image {
@@ -28,7 +39,7 @@
 }
 
 .page-header__offer {
-  padding-left: 250px;
+  padding-left: 249px;
   position: relative;
 }
 
@@ -36,7 +47,7 @@
   margin-bottom: 25px;
   font-size: 80px;
   font-weight: 700;
-  letter-spacing: 0.077em;
+  letter-spacing: 0.07em;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   text-transform: uppercase;
 }
@@ -44,14 +55,15 @@
 .page-header__description {
   width: 621px;
   margin-left: 98px;
-  margin-bottom: 44px;
+  margin-right: auto;
+  margin-bottom: 45px;
   font-size: 22px;
   line-height: 156.8%;
 }
 
 .page-header__description::before {
   position: absolute;
-  top: 204px;
+  top: 139px;
   left: 253px;
   content: "";
   width: 66px;
@@ -71,7 +83,7 @@
   letter-spacing: 0.05em;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   margin-left: 97px;
-  padding: 17px 50px 19px 45px;
+  padding: 17px 45px 19px 46px;
   background-color: #00b2ff;
   border-radius: 5px;
 }
@@ -90,6 +102,7 @@
 }
 
 .page-header__scroll {
+  position: absolute;
   width: 100px;
   margin-top: 128px;
   margin-left: 210px;
@@ -113,18 +126,27 @@
   .page-header {
     min-height: 270px;
     background-image: url("../img/background-page-header-tablet.jpg");
+    background-position: center;
   }
 
   .page-header__wrapper {
-    width: 720px;
-    padding: 0;
     padding-top: 20px;
-    padding-left: 25px;
+    padding-left: 19px;
+    padding-right: 22px;
     margin-bottom: 61px;
   }
 
+  .page-header__container {
+    min-width: 723px;
+    margin-bottom: 111px;
+  }
+
+  .page-header__logo {
+    margin-left: 5px;
+  }
+
   .page-header__offer {
-    padding-left: 88px;
+    padding-left: 69px;
   }
 
   .page-header__title {
@@ -140,16 +162,15 @@
   }
 
   .page-header__description::before {
-    top: 236px;
-    left: 91px;
+    top: 186px;
+    left: 72px;
     width: 33px;
   }
 
   .page-header__link {
     margin-left: 51px;
-    padding: 17px 32px 19px 25px;
-    margin-bottom: 163px;
-    letter-spacing: 0.07em;
+    padding: 17px 31px 19px 31px;
+    margin-bottom: 102px;
   }
 
   .page-header__scroll {
@@ -161,12 +182,20 @@
   .page-header {
     min-height: 157px;
     background-image: url("../img/background-page-header-mobile.jpg");
+    background-position: center;
   }
 
   .page-header__wrapper {
-    width: 288px;
-    padding: 17px 0 0 17px;
-    margin-bottom: 192px;
+    padding: 17px 0 0 0;
+    margin-bottom: 0;
+  }
+
+  .page-header__container {
+    min-width: 315px;
+  }
+
+  .page-header__logo {
+    margin-left: 17px;
   }
 
   .page-header__logo-image {
@@ -175,26 +204,26 @@
   }
 
   .page-header__offer {
-    padding-left: 10px;
+    padding-left: 17px;
   }
 
   .page-header__title {
     width: 250px;
     font-size: 40px;
-    margin-left: 5px;
+    margin-left: 0;
     margin-bottom: 28px;
   }
 
   .page-header__description {
     width: 250px;
-    margin-left: 55px;
+    margin-left: 50px;
     margin-bottom: 42px;
     font-size: 16px;
   }
 
   .page-header__description::before {
     width: 33px;
-    top: 171px;
+    top: 138px;
     left: 18px;
   }
 
@@ -203,10 +232,11 @@
   }
 
   .page-header__link-mobile {
+    width: 227px;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 8px;
-    padding: 17px 31px 19px 31px;
+    margin-left: 1px;
+    padding: 17px 28px 19px 32px;
     margin-bottom: 70px;
     letter-spacing: 0.06em;
   }

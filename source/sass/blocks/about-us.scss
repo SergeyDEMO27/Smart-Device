@@ -1,7 +1,18 @@
+.about-us {
+  position: relative;
+}
+
+.abous-us-container {
+  max-width: 1145px;
+  padding-left: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .about-us__title,
 .about-us__description,
 .about-us__link {
-  margin-left: 180px;
+  margin-left: 4.5vw;
 }
 
 .about-us__title {
@@ -13,10 +24,10 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
-.about-us__title::before {
+.about-us__description .year::before {
   position: absolute;
-  top: 850px;
-  left: 369px;
+  top: -69px;
+  left: -185px;
   content: "";
   width: 220px;
   height: 317px;
@@ -26,7 +37,8 @@
 }
 
 .about-us__description {
-  width: 972px;
+  position: relative;
+  max-width: 972px;
   margin-bottom: 23px;
   color: #666666;
   font-size: 16px;
@@ -39,6 +51,7 @@
 }
 
 .about-us__link {
+  margin-bottom: 65px;
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
@@ -70,31 +83,44 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .abous-us-container {
+    width: 520px;
+    padding-left: 170px;
+  }
+
   .about-us__title,
   .about-us__description,
   .about-us__link {
-    margin-left: 185px;
+    margin-left: 0;
   }
 
   .about-us__title {
     margin-top: 10px;
-    margin-bottom: 26px;
+    margin-bottom: 27px;
     font-size: 32px;
   }
 
+  .about-us__description .year::before {
+    top: -73px;
+    left: -193px;
+    width: 219px;
+    height: 361px;
+  }
+
   .about-us__title::before {
-    top: 677px;
-    left: 19px;
+    top: -5px;
+    left: -0.65vw;
     width: 219px;
     height: 361px;
   }
 
   .about-us__description {
     width: 530px;
+    margin-left: 4px;
   }
 
   .about-us__description:last-of-type {
-    margin-bottom: 42px;
+    margin-bottom: 44px;
   }
 
   .about-us__dots {
@@ -109,10 +135,18 @@
   .about-us__link {
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-left: 3px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .abous-us-container {
+    width: 300px;
+    padding-left: 0;
+  }
+
   .about-us__title,
   .about-us__description,
   .about-us__link {
@@ -123,14 +157,16 @@
     margin-top: 10px;
     margin-bottom: 23px;
     font-size: 28px;
+    margin-left: 4px;
   }
 
-  .about-us__title::before {
+  .about-us__description .year::before {
     display: none;
   }
 
   .about-us__description {
     width: 290px;
+    margin-left: 6px;
   }
 
   .about-us__description:first-of-type {
@@ -148,5 +184,12 @@
 
   .about-us__mobile {
     display: none;
+  }
+
+  .about-us__link {
+    margin-left: 6px;
+    padding-left: 52px;
+    padding-right: 49px;
+    margin-bottom: 62px;
   }
 }

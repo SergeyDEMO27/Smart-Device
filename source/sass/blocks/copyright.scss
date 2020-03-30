@@ -19,77 +19,70 @@
 
 .copyright--rights {
   margin-right: 68px;
+  margin-left: 15px;
 }
 
 .copyright--rights .copyright__item {
   margin-top: 0;
-  margin-right: 74px;
+  margin-right: 3.88vw;
+}
+
+.copyright--confidentiality {
+  width: 217px;
 }
 
 .copyright--developer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  width: 192px;
+  margin-left: auto;
 }
 
-.copyright--developer a:hover {
+.copyright--developer a:hover,
+.copyright--confidentiality a:hover {
   color: #00b2ff;
 }
 
-.copyright--developer a:active {
+.copyright--developer a:active,
+.copyright--confidentiality a:active {
   color: #000000;
 }
 
-.copyright--developer .copyright__item {
+.copyright--developer .copyright__item,
+.copyright--confidentiality .copyright__item {
   text-decoration: none;
   display: block;
 }
 
-.copyright--developer .copyright__item:first-child {
-  margin-right: 405px;
-}
-
-.copyright--developer::before {
-  position: absolute;
-  left: 0;
-  top: 263px;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #dcdddc;
-}
-
 @media (min-width: 768px) and (max-width: 1023px) {
   .copyright--rights {
-    order: -1;
+    order: -3;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .copyright--rights .copyright__item {
     margin-top: 15px;
-    margin-right: 0;
+    margin-right: auto;
   }
 
   .copyright--rights .copyright__item:first-child {
     display: none;
   }
 
-  .copyright--rights::before {
-    position: absolute;
-    left: 0;
-    top: 103px;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: #dcdddc;
+  .copyright--developer {
+    margin-right: 5px;
   }
 
   .copyright--developer .copyright__item:first-child {
-    margin-right: 310px;
+    margin-right: 0;
   }
 
   .copyright--developer::before {
     top: 387px;
+  }
+
+  .copyright--confidentiality {
+    margin-left: 7px;
   }
 }
 
@@ -97,34 +90,41 @@
   .copyright--developer .copyright__item:first-child {
     margin-right: 0;
     margin-left: 38px;
+    margin-top: 15px;
     margin-bottom: 21px;
   }
 
   .copyright--rights {
     margin-top: 7px;
-    margin-left: 29px;
-    margin-bottom: 129px;
-    order: -1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 130px;
+    order: -3;
   }
 
   .copyright--rights .copyright__item {
     width: 250px;
     margin-top: 15px;
     margin-right: 0;
+    margin-left: 15px;
   }
 
   .copyright--rights .copyright__item:first-child {
     display: none;
   }
 
-  .copyright--rights::before {
-    position: absolute;
-    left: 0;
-    top: 260px;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: #dcdddc;
+  .copyright--confidentiality {
+    order: 2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6px;
+  }
+
+  .copyright--developer {
+    width: 250px;
+    order: 3;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .copyright--developer::before {
@@ -132,6 +132,6 @@
   }
 
   .copyright--developer .copyright__item:last-child {
-    margin-left: 50px;
+    margin-left: 30px;
   }
 }
