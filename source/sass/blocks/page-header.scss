@@ -20,7 +20,7 @@
 .page-header__container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1425px;
+  max-width: 1455px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,7 +30,7 @@
 }
 
 .page-header__logo {
-  margin-left: 15px;
+  margin-left: 25px;
 }
 
 .page-header__logo-image {
@@ -39,7 +39,11 @@
 }
 
 .page-header__offer {
-  padding-left: 249px;
+  height: 407px;
+  max-width: 1425px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1vw;
   position: relative;
 }
 
@@ -64,7 +68,7 @@
 .page-header__description::before {
   position: absolute;
   top: 139px;
-  left: 253px;
+  left: 1.25vw;
   content: "";
   width: 66px;
   height: 2px;
@@ -102,10 +106,10 @@
 }
 
 .page-header__scroll {
-  position: absolute;
+  display: block;
   width: 100px;
   margin-top: 128px;
-  margin-left: 210px;
+  margin-left: -40px;
   transform: rotate(-90deg);
   text-decoration: none;
   color: #ffffff;
@@ -124,7 +128,7 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .page-header {
-    min-height: 270px;
+    min-height: 685px;
     background-image: url("../img/background-page-header-tablet.jpg");
     background-position: center;
   }
@@ -188,6 +192,7 @@
   .page-header__wrapper {
     padding: 17px 0 0 0;
     margin-bottom: 0;
+    height: 630px;
   }
 
   .page-header__container {
@@ -204,7 +209,10 @@
   }
 
   .page-header__offer {
-    padding-left: 17px;
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
   }
 
   .page-header__title {
@@ -222,9 +230,9 @@
   }
 
   .page-header__description::before {
-    width: 33px;
+    width: 32px;
     top: 138px;
-    left: 18px;
+    left: 4px;
   }
 
   .page-header__link {
