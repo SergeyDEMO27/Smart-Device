@@ -52,6 +52,16 @@
     margin-bottom: 33px;
   }
 
+  .nav__title::before {
+    position: absolute;
+    left: -29vw;
+    top: 45px;
+    content: "";
+    width: 129vw;
+    height: 1px;
+    background-color: #dcdddc;
+  }
+
   .nav__tab-title {
     position: absolute;
     top: -30px;
@@ -88,7 +98,7 @@
     display: block;
   }
 
-  .nav :checked + .page-footer__wrapper::after {
-    top: 360px;
+  .nav :checked + .nav__title::before {
+    top: 285px;
   }
 }

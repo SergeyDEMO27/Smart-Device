@@ -72,6 +72,16 @@
     margin-left: 15px;
   }
 
+  .contacts__title::before {
+    position: absolute;
+    left: -29vw;
+    top: 45px;
+    content: "";
+    width: 129vw;
+    height: 1px;
+    background-color: #dcdddc;
+  }
+
   .contacts__description {
     display: none;
     margin-left: 15px;
@@ -81,7 +91,7 @@
     position: absolute;
     top: -30px;
     left: -15px;
-    width: 300px;
+    width: 320px;
     height: 72px;
   }
 

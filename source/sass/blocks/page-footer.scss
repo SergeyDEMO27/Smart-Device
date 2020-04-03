@@ -106,12 +106,6 @@
   }
 
   .page-footer__wrapper::after {
-    position: absolute;
-    left: 0;
-    top: 334px;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: #dcdddc;
+    width: 0;
   }
 }

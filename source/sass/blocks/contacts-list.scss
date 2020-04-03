@@ -32,7 +32,7 @@
   color: #000000;
 }
 
-.contacts-list__item--mail::before {
+.contacts-list__item--mail a::before {
   position: absolute;
   top: 14px;
   left: -40px;
@@ -44,7 +44,7 @@
   background-size: contain;
 }
 
-.contacts-list__item--tel::before {
+.contacts-list__item--tel a::before {
   position: absolute;
   top: 12px;
   left: 184px;
@@ -93,7 +93,8 @@
     margin-right: 0;
   }
 
-  .contacts-list__mobile {
+  .contacts-list-text,
+  .contacts-list__link {
     display: none;
   }
 
@@ -101,37 +102,38 @@
     border: none;
   }
 
-  .contacts-list__item--mail::before {
-    top: -12px;
-    left: -34px;
+  .contacts-list__item--mail a::before {
+    top: -4px;
+    left: 88px;
     width: 25px;
     height: 19px;
   }
 
-  .contacts-list__item--tel::before {
-    top: -16px;
-    left: 26px;
+  .contacts-list__item--tel a::before {
+    top: -7px;
+    left: 147px;
     width: 24px;
     height: 24px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .contacts-list__mobile {
+  .contacts-list-text,
+  .contacts-list__link {
     display: none;
   }
 
-  .contacts-list__item--mail::before {
+  .contacts-list__item--mail a::before {
+    top: -4px;
+    left: 100px;
     width: 25px;
     height: 19px;
-    top: -13px;
-    left: -22px;
   }
 
-  .contacts-list__item--tel::before {
+  .contacts-list__item--tel a::before {
+    top: -7px;
+    left: 147px;
     width: 24px;
     height: 24px;
-    top: -16px;
-    left: 25px;
   }
 }
